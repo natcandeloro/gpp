@@ -1,0 +1,109 @@
+/* Estilos generales del slider */
+.slider_clientes {
+  --image-size: 350px;
+  padding: 20px;
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(7, 55, 99, 0.4); /* El mismo #073763 pero con 0.4 de opacidad */
+  padding: 5px;
+  text-align: center;
+  margin: 0.5em;
+  color: #fff;
+}
+
+h1 {
+
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+    color: #fff;
+  }
+
+
+.slider_wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider_content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider_content img {
+  display: block;
+  min-width: var(--image-size);
+  height: var(--image-size);
+  margin: 0 1vw;
+}
+
+.slider_button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Estilos específicos para tabletas */
+@media (max-width: 768px) {
+  .slider_clientes {
+      --image-size: 100px;
+      padding: 10px;
+  }
+h1 {
+  color: #333;
+  font-size: 15px;
+  text-align: center;
+}
+  .slider_content img {
+      min-width: var(--image-size);
+      height: var(--image-size);
+      margin: 0 0.5vw;
+  }
+
+  .slider_button {
+      padding: 8px;
+  }
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 480px) {
+  .slider_clientes {
+      --image-size: 120px;
+      padding: 5px;
+      margin: 5em auto;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  .slider_content img {
+      min-width: var(--image-size);
+      height: var(--image-size);
+      margin: 0 0.2vw;
+  }
+
+  .slider_button {
+      padding: 6px;
+      font-size: 14px;
+  }
+}

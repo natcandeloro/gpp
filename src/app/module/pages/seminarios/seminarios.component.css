@@ -1,0 +1,67 @@
+.seminarios-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+}
+
+.seminario {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4em;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 220px; 
+}
+
+.seminario-content {
+  background-color: rgba(0, 51, 102, 0.7);
+  padding: 2em;
+  border-radius: 15px;
+  width: 800px;
+}
+
+.btn-inscribirse {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: #ff6600;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 1em;
+}
+
+.btn-inscribirse:hover {
+  background-color: #ff4500;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .seminarios-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .seminario {
+    margin-bottom: 2em;
+    width: 90vw;
+  }
+
+  .seminario-content {
+
+    padding: 1em; 
+  }
+
+  .seminario p {
+    display: none !important; 
+  }
+}

@@ -1,0 +1,79 @@
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.section.white-bg {
+  background: white;
+  color: #333;
+}
+
+.section.blue-bg {
+  background: linear-gradient(rgba(0, 45, 91, 0.85), rgba(0, 45, 91, 0.85)), url('/api/placeholder/1200/600');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #FF6B00;
+}
+
+.content {
+  background: linear-gradient(rgba(0, 45, 91, 0.85), rgba(0, 45, 91, 0.85));
+  padding: 40px;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 900px;
+  color: white;
+}
+
+.description {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.value-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.highlight-letter {
+  color: #FF6B00;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.special-note {
+  margin-top: 40px;
+  font-style: italic;
+  color: #FF6B00;
+  font-size: 0.9em;
+}

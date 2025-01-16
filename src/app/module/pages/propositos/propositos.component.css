@@ -1,0 +1,48 @@
+
+  .section {
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(rgba(0, 45, 91, 0.85), rgba(0, 45, 91, 0.85)), url('/api/placeholder/1200/600');
+    background-size: cover;
+    background-position: center;
+    margin: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #FF6B00;
+  }
+  
+  .content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    margin: 20px auto;
+    max-width: 900px;
+  }
+  
+  .content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .highlight {
+    color: #FF6B00;
+    font-weight: bold;
+  }
+  
+  .quote-marks {
+    font-size: 1.5em;
+    color: #FF6B00;
+  }

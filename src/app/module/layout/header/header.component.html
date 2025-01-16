@@ -1,0 +1,51 @@
+<mat-toolbar>
+  <div class="left-container">
+    <div class="logo-container">
+      <a class="navbar-brand" routerLink="">
+        <img src="../../../../assets/GRUPO PRIMEROS PASOS.png" alt="Logo" class="logo">
+      </a>
+    </div>
+    <div class="desktop-menu">
+      <div class="nav-link"><a routerLink="quienesSomos">Quienes somos</a></div>
+      <div class="nav-link"><a routerLink="valores">Valores</a></div>
+      <div class="nav-link"><a routerLink="proposito">Propósitos</a></div>
+      <div class="nav-link"><a routerLink="testimonios">Testimonios</a></div>
+      <div class="nav-link"><a routerLink="meditaciones">Meditaciones</a></div>
+      <div class="nav-link"><a routerLink="galeria">Galería</a></div>
+      <div class="contact-button" style="  margin-left: 0.5em;
+"><a routerLink="contacto">Contacto</a></div>
+
+    </div>
+  </div>
+  <!--<div class="">
+    <a routerLink="contacto">Contacto</a>
+  </div>-->
+  <button mat-icon-button (click)="sidenav.toggle()" class="menu-button">
+    <mat-icon>menu</mat-icon>
+  </button>
+  
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" (click)="closeSideNav()">
+  <mat-nav-list>
+  <a mat-list-item routerLink="quienesSomos" >Quienes somos</a>
+  <a mat-list-item routerLink="valores">Valores </a>
+  <a mat-list-item routerLink="proposito">Propósitos </a>
+
+  <a mat-list-item routerLink="testimonios">Testimonios</a>
+  <a mat-list-item routerLink="meditaciones">Meditaciones</a>
+  <a mat-list-item routerLink="galeria">Galería </a>
+  <a mat-list-item routerLink="contacto">Contactos </a>
+  </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>            
+    <router-outlet>    
+      <a href="https://wa.me/2612711458" target="_blank" class="whatsapp-fijo">
+      <img src="../../../../assets/whatsapp.png" alt="WhatsApp">
+    </a></router-outlet>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+

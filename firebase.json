@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "dist/gpp/browser",
+    "site": "grupoprimerospasos-59ef3",
+    "ignore": [
+      "firebase.json",
+      "/.*",
+      "/node_modules/"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

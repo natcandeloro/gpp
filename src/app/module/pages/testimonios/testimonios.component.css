@@ -1,0 +1,52 @@
+.testimonials-container {
+    position: relative;
+    margin: 2em auto;
+    max-width: 1200px;
+    overflow: hidden; 
+    color: white; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px 30px -15px;
+}
+
+.testimonial-video {
+    padding: 15px;
+}
+
+.testimonial-video iframe {
+    width: 100%;
+    aspect-ratio: 9/16;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    max-width: 315px;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991px) {
+    .testimonial-video iframe {
+        max-width: 80%;
+    }
+}
+
+.overlay {
+    background-color: rgba(7, 55, 99, 0.4); /* El mismo #073763 pero con 0.4 de opacidad */
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.highlight-text {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+

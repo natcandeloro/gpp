@@ -1,0 +1,50 @@
+/* styles.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .whatsapp-fijo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    width: 60px; /* Tamaño del ícono */
+    height: 60px;
+  }
+  
+  .whatsapp-fijo img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  app-header {
+    background-color: var(--primary-color);
+
+  }
+
+  app-footer {
+    background-color: var(--primary-color); 
+    color: var(--font-color); 
+    text-align: center;
+    padding: 0;
+    z-index: 10; /* Mantén el footer por encima del contenido */
+  }
+  
+
+  
+  .text-content {
+    padding: 20px;
+  }
+  
+
+
