@@ -1,21 +1,20 @@
-/* Estilos generales del slider */
 .slider_clientes {
-  --image-size: 350px;
+  --image-size: 550px;
   padding: 20px;
   overflow: hidden;
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
 .overlay {
-  background-color: rgba(7, 55, 99, 0.4); /* El mismo #073763 pero con 0.4 de opacidad */
-  padding: 5px;
+  background-color: #073763;
+  padding: 20px;
   text-align: center;
   margin: 0.5em;
   color: #fff;
 }
+
 
 h1 {
 
@@ -68,8 +67,9 @@ h1 {
       --image-size: 100px;
       padding: 10px;
   }
+
 h1 {
-  color: #333;
+  color: #fff;
   font-size: 15px;
   text-align: center;
 }
@@ -87,9 +87,9 @@ h1 {
 /* Estilos específicos para dispositivos móviles */
 @media (max-width: 480px) {
   .slider_clientes {
-      --image-size: 120px;
+      --image-size: 250px;
       padding: 5px;
-      margin: 5em auto;
+      margin: 0.5em auto;
   }
 
   h1 {
@@ -97,7 +97,6 @@ h1 {
   }
 
   .slider_content img {
-      min-width: var(--image-size);
       height: var(--image-size);
       margin: 0 0.2vw;
   }

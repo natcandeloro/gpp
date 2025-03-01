@@ -54,14 +54,12 @@ h1 {
 .meditations-section {
   margin: 0.5em auto;
   padding: 5px;
-  max-width: 1100px;
   text-align: center;
-
 }
 
 .section-title {
-  margin-bottom: 0.5em;
   font-size: 2.5em;
+  margin-bottom: 0.5em;
   color: #fff;
 }
 
@@ -88,10 +86,10 @@ h1 {
 }
 
 .overlay {
-  background-color: rgba(7, 55, 99, 0.4); /* El mismo #073763 pero con 0.4 de opacidad */
+  background-color: #073763;
   padding: 20px;
   text-align: center;
-  margin: 0;
+  margin: 0.5em;
 }
 
 .audio-card h2 {
@@ -122,6 +120,9 @@ audio {
   .audio-card {
       flex: 1;
       margin: 0 1em;
+  }
+  .overlay {
+    margin: 0.5em;
   }
 }
 
