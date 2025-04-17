@@ -21,6 +21,8 @@ import { ValoresComponent } from './valores/valores.component';
 import { PropositosComponent } from './propositos/propositos.component';
 import { ModalComponent } from './modal/modal.component'; // Solo si usas tarjetas
 import { MatIconModule } from '@angular/material/icon';
+import { ModalCompromisoPersonalComponent } from './modal-compromiso-personal/modal-compromiso-personal.component';
+import { ModalAbundanciaComponent } from './modal-abundancia/modal-abundancia.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { MatIconModule } from '@angular/material/icon';
     FormComponent,
     ValoresComponent,
     PropositosComponent,
-    ModalComponent
+    ModalComponent,
+    ModalCompromisoPersonalComponent,
+    ModalAbundanciaComponent
   ],
   imports: [
     CommonModule,
