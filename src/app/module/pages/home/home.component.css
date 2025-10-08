@@ -1,4 +1,5 @@
-* { 
+ /*
+ * { 
   box-sizing: border-box;
   margin: 0;
 
@@ -41,10 +42,10 @@
 .imagen {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra verticalmente el H1 */
-  align-items: center; /* Centra horizontalmente el H1 */
-  position: relative; /* Para posicionar la imagen en la parte inferior */
-  height: 90vh; /* Para asegurar que la columna ocupe toda la altura disponible */
+  justify-content: center;
+  align-items: center; 
+  position: relative; 
+  height: 90vh;
 }
 
 .quienes-somos { 
@@ -60,7 +61,7 @@
 .imagen-fondo {
   position: absolute;
   bottom: 0em;
-  width: 40%; /* Ajusta el tamaño de la imagen */
+  width: 40%; 
   height: auto;
 }
 
@@ -177,4 +178,148 @@ h1 {
   .perfil {
     width: 200px;
     height: 200px;}
+}*/
+
+/* ===========================
+   Paleta minimal institucional
+=========================== */
+:root{
+  --ink:#0f172a;                 /* texto principal (azul muy oscuro) */
+  --muted:#475569;               /* texto secundario */
+  --brand-blue:#0b4da2;          /* acento azul */
+  --brand-orange:#ff6600;        /* acento naranja */
+  --line:#edf1f6;                /* líneas/divisores súper suaves */
+  --card:#ffffff;                /* blanco protagonista */
+  --shadow: 0 8px 24px rgba(10, 42, 94, .06);
+  --radius: 18px;
 }
+
+/* ===========================
+   Base tipográfica & reset suave
+=========================== */
+html, body{
+  background:#fff;               /* blanco pleno */
+  color:var(--ink);
+  font-family:"Poppins", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height:1.75;
+  font-size:16px;
+}
+h1, h2, h3, .h1, .h2, .h3{
+  color:#0a2540;                 /* azul institucional sobrio */
+  line-height:1.2;
+  margin-bottom:.5em;
+}
+p{ margin-bottom:1rem; color:var(--muted); }
+
+/* Enfatizados sobrios */
+strong{ color:var(--brand-orange); font-weight:700; }
+
+/* Utilidades */
+.mt-section{ margin-top: clamp(28px, 5vw, 72px); }
+
+/* Separadores finos para dar “aire” blanco */
+hr, .divider{
+  border:0; height:1px; background:var(--line);
+  margin: clamp(16px, 3vw, 32px) 0;
+}
+
+/* ===========================
+   HERO (blanco predominante)
+=========================== */
+.hero{
+  display:grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: clamp(16px, 4vw, 40px);
+  align-items:center;
+  padding: clamp(20px, 5vw, 64px) 0;
+  border-bottom:1px solid var(--line);   /* línea sutil, mantiene el blanco */
+}
+.title-wrap{
+  text-align:center;
+  display:flex; align-items:center; justify-content:center;
+}
+.hero h1{
+  font-weight:800;
+  font-size: clamp(36px, 6vw, 72px);
+  color:#0a2540;                          /* sólido, sin degradados */
+  letter-spacing:.2px;
+}
+
+/* Acentos minimalistas (rayitas) */
+.acentos{
+  display:flex; gap:10px; align-items:center; justify-content:center;
+  margin-bottom:.6rem;
+}
+.acentos span{
+  display:block; width:40px; height:6px; border-radius:6px; opacity:.85;
+}
+.acentos .naranja{ background:var(--brand-orange); }
+.acentos .azul{ background:var(--brand-blue); }
+
+/* Imagen limpia con sombra muy leve */
+.shadow-image{
+  width:100%; height:auto; border-radius: var(--radius);
+  background:#fff;
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
+
+/* ===========================
+   QUIÉNES SOMOS (card blanca)
+=========================== */
+.quienes-somos{
+  background: var(--card);                 /* blanco pleno */
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(16px, 3.2vw, 40px);
+  box-shadow: var(--shadow);               /* sombra suave para “flotar” en blanco */
+}
+.quienes-somos .h1{
+  font-size: clamp(24px, 3vw, 36px);
+  margin-bottom: 8px;
+  color:#0a2540;
+}
+.quienes-somos .imagen{
+  display:flex; flex-direction:column; justify-content:flex-start;
+}
+.quienes-somos p{
+  font-size: clamp(15px, 1.05vw, 17px);
+}
+
+/* ===========================
+   PERFIL FACILITADOR (card blanca)
+=========================== */
+.seba{
+  background: var(--card);
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(16px, 3vw, 32px);
+  box-shadow: var(--shadow);
+}
+.seba p{ color:var(--muted); }
+
+/* Foto con marco blanco (mucho blanco alrededor) */
+.perfil{
+  width:100%;
+  max-width:260px;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:16px;
+  border:8px solid #fff;                     /* marco blanco dominante */
+  box-shadow: 0 10px 28px rgba(10,42,94,.10);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 992px){
+  .hero{ grid-template-columns:1fr; text-align:center; }
+  .title-wrap{ order:-1; }
+}
+@media (max-width: 576px){
+  .hero h1{ font-size: clamp(28px, 9vw, 40px); }
+  .acentos span{ width:34px; height:5px; }
+  .perfil{ max-width: 220px; }
+}
+
+
